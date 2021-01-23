@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="About CSS.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <title>Michelle's Violin Studio</title>
+    <title>Michelle Music Studio</title>
     <style>
       #small-img1, #small-img2, #small-img3 {
         min-height: 20%;
@@ -43,6 +43,10 @@
       body {
         width: 100%;
       }
+      .heading {
+        padding: 30px;
+        background-color: beige;
+      }
     </style>
 </head>
 <body>
@@ -78,9 +82,10 @@
         
     </header>
     <section>
-        <div class="jumbotron">
+        <div class="heading">
             <h1 class="text-center text-primary display-5">About Michelle Liu</h1>
           </div>
+          <br>
           <div class="row">
              
     <div class="col-md-4">
@@ -121,15 +126,14 @@
              $(document).ready(function () {
          $(".btn").on("click", function () {
            var search = $(".form-control").val().toLowerCase()
-           if (search === "about") {
-             alert("You are already on About")
-             
-           }
            if (search === "contact") {
              window.open("Contact(Violin).html")
            }
            if (search === "home") {
-              window.open("violin webpage.html")
+              window.open("index.html")
+           }
+           if (search === "interactive") {
+              window.open("Interactive.html")
            }
            else {
              alert("Please enter a valid page name!")
