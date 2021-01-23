@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="About CSS.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Michelle's Violin Studio</title>
+    <style>
+      #small-img1, #small-img2, #small-img3 {
+        min-height: 20%;
+        min-width: 10%;
+      }
+
+      
+      
+      #small-img1, .card1 {
+        min-width: 300px;
+      }
+      #small-img1 {
+        height: 320px;
+      }
+
+      #small-img2 {
+        height: 130px;
+      }
+
+
+      #small-img3 {
+        height: 320px;
+      }
+      #float-right {
+        float: right;
+      }
+      .card {
+        position: relative;
+        left: 100px;
+      }
+      .row {
+        margin-right: 100px;
+      }
+      body {
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="top-bar">
+            <a class="navbar-brand" href="Violin Webpage.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact(Violin).html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Interactive.html">Interactive</a>
+                </li>
+            
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        
+    </header>
+    <section>
+        <div class="jumbotron">
+            <h1 class="text-center text-primary display-5">About Michelle Liu</h1>
+          </div>
+          <div class="row">
+             
+    <div class="col-md-4">
+            <div class="card card1" style="width: 18rem;">
+                <img src="Violin6.jpg" id="small-img1" class="card-img-top left-card-img" alt="Michelle Liu with violin student">
+                <div class="card-body">
+                    <p>Michelle Liu with a violin student at her music room</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card main-card rounded" style="width: 18.9rem;">
+                  <img src="IMG_0280.jpg" id="small-img2"  alt="Background Story Image">
+                  <div class="card-body">
+                      <h2>About Music</h2>
+            
+                <p> Music is mankind’s most valuable possession. Music can comfort your heart and mind. It can give you limitless happiness. It can improve your IQ and emotional intelligence. For children, music can make them a well-rounded person in their early life.</p>
+                  </div>
+              </div>
+          </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                <img src="./IMG_2197.JPG" id="small-img3" class="card-img-top right-card-img" alt="Michelle Liu with group of violin students">
+                <div class="card-body">
+                    <p>Michelle performed violin for the first time on a stage</p>
+                  
+                </div>
+              </div>
+              </div>
+            </div>
+            
+        
+       
+         
+            </div>
+        </section>
+        <script>
+             $(document).ready(function () {
+         $(".btn").on("click", function () {
+           var search = $(".form-control").val().toLowerCase()
+           if (search === "about") {
+             alert("You are already on About")
+             
+           }
+           if (search === "contact") {
+             window.open("Contact(Violin).html")
+           }
+           if (search === "home") {
+              window.open("violin webpage.html")
+           }
+           else {
+             alert("Please enter a valid page name!")
+           }
+           
+         })
+        })
+        const express = require("express")
+        const app = express();
+        
+        </script>
+</body>
+</html>

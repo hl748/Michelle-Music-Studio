@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="Interactive.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <title>Michelle's Violin Studio</title>
+  <style>
+    form {
+      margin-left: 475px;
+      margin-top: 25px;
+    }
+
+    h1 {
+      margin-left: 400px;
+    }
+    #submitButton {
+      margin-left: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="top-bar">
+      <a class="navbar-brand" href="Violin Webpage.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact(Violin).html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Interactive.html">Interactive</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+  </header>
+  <section>
+    <br>
+    <h1>Student's Information</h1>
+    <form>
+      <caption>Please fill out your information below:</caption><br>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" placeholder="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+      <label for="fname">Email: </label><br>
+      <input type="text" id="fname" name="fname" placeholder="someone@email.com"><br>
+      <label for="lname">Telephone: </label><br>
+      <input type="text" id="lname" name="lname" placeholder="000-000-0000"><br><br>
+      <caption>Please select the instrument(s):</caption><br>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> Violin</label>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> Piano</label>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> Erhu</label><br>
+      <input id="submitButton" type="submit" value="Submit">
+    </form>
+
+  </section>
+</body>
+
+</html>
