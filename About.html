@@ -47,6 +47,38 @@
         padding: 30px;
         background-color: beige;
       }
+      #question-bubble {
+      width: 20%;
+      height: auto;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid blue;
+      border-radius: 15px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 2;
+      display: none;
+      cursor: pointer;
+    }
+    #question:after {
+      content: ' \2754';
+      border: 2px solid lightblue;
+      border-radius: 50%;
+      padding: 5px 10px 5px 10px;
+      background-color: lightblue;
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      cursor: pointer;
+      box-shadow: 1px 1px black;
+    }
+    #question:hover {
+      opacity: 0.5;
+    }
+    li a:hover {
+      background-color: green;
+    }
     </style>
 </head>
 <body>
@@ -66,7 +98,7 @@
                   <a class="nav-link" href="Contact(Violin).html">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Interactive.html">Interactive</a>
+                  <a class="nav-link" href="Register.html">Register</a>
                 </li>
             
                 <li class="nav-item">
@@ -85,6 +117,10 @@
         <div class="heading">
             <h1 class="text-center text-primary display-5">About Michelle Liu</h1>
           </div>
+          <div id="question-bubble">
+            <p>If you have any questions, please call us at 704-267-2689. &#128512;</p>
+          </div>
+          <div id="question"></div>
           <br>
           <div class="row">
              
@@ -132,17 +168,27 @@
            if (search === "home") {
               window.open("index.html")
            }
-           if (search === "interactive") {
-              window.open("Interactive.html")
+           if (search === "Register") {
+              window.open("Register.html")
            }
            else {
              alert("Please enter a valid page name!")
            }
            
          })
+         $("#question").on("click", function () {
+        $("#question").css("display", "none")
+        $("#question-bubble").css("display", "block")
+      })
+
+      $("#question-bubble").on("click", function() {
+        $("#question-bubble").css("display", "none")
+        $("#question").css("display","block")
+      })
         })
         const express = require("express")
         const app = express();
+        
         
         </script>
 </body>

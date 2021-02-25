@@ -8,7 +8,7 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <title>Michelle's Violin Studio</title>
+  <title>Michelle's Music Studio</title>
   <style>
     .imgone {
       min-height: 350px;
@@ -44,6 +44,41 @@
       text-align: center;
       padding: 20px;
     }
+
+    #question-bubble {
+      width: 20%;
+      height: auto;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid blue;
+      border-radius: 15px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 2;
+      display: none;
+      cursor: pointer;
+    }
+    #question:after {
+      content: ' \2754';
+      border: 2px solid lightblue;
+      border-radius: 50%;
+      padding: 5px 10px 5px 10px;
+      background-color: lightblue;
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      cursor: pointer;
+      box-shadow: 1px 1px black;
+    }
+    #question:hover {
+      opacity: 0.5;
+    }
+    #second-video {
+      padding: 70px;
+    }
+    
+    
   </style>
 </head>
 
@@ -65,7 +100,7 @@
             <a class="nav-link" href="Contact(Violin).html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Interactive.html">Interactive</a>
+            <a class="nav-link" href="Register.html">Register</a>
           </li>
 
 
@@ -82,12 +117,17 @@
 
   </header>
   <div class="container">
+    
+    <div id="question-bubble">
+      <p>If you have any questions, please call us at 704-267-2689. &#128512;</p>
+    </div>
     <section class="row">
-
+      
       <main>
-
+        <div id="question"></div>
         <h2 id="p4"></h2>
         <h1 id="title">Michelle Music Studio</h1>
+        
         <div class="card mb-3" style="max-width: 1040px;">
           <div class="row no-gutters">
             <div class="col-md-6">
@@ -118,27 +158,31 @@
 
             <source src="final_5f2483f192086a0015cfc884_719896.mp4" type="video/mp4">
           </video>
-        </div>
-
+          
+          </div> 
+      
         <h1 class="tag">Michelle with Students</h1>
         <div id="carousel-bg">
           <div id="carouselExampleControls" class="carousel slide"
             style="height: 100px; width: 550px; margin-left: 250px;" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item mh-50 active">
-                <img src="Violin Image.JPG" class="d-block h-25 w-100"
+                <img src="IMG_1169.JPG" class="d-block h-25 w-100"
                   style="margin-left: 30px; height: 50vw; width: 300px;" alt="...">
               </div>
               <div class="carousel-item mh-100">
                 <img src="IMG_0310.jpg" class="d-block h-25 w-100" alt="...">
               </div>
               <div class="carousel-item mh-100">
+<<<<<<< HEAD
+=======
                 
               </div>
               <div class="carousel-item mh-100">
                 
               </div>
               <div class="carousel-item mh-100">
+>>>>>>> ec1565124f270729cd589d6d4e4fb77dee97275a
                 <img src="IMG_2071.jpg" class="d-block h-25 w-100" alt="...">
               </div>
               <div class="carousel-item mh-100">
@@ -180,6 +224,9 @@
         if (search === "contact") {
           window.open("Contact(Violin).html")
         }
+        if (search === "register") {
+          window.open("Register.html")
+        }
         if (search === "home") {
           alert("You are already on Home")
         }
@@ -195,6 +242,15 @@
       autoplay();
       $("#exit").on("click", function () {
         $(".pop-up-ad-container").css("display", "none")
+      })
+      $("#question").on("click", function () {
+        $("#question").css("display", "none")
+        $("#question-bubble").css("display", "block")
+      })
+
+      $("#question-bubble").on("click", function() {
+        $("#question-bubble").css("display", "none")
+        $("#question").css("display","block")
       })
 
     })
