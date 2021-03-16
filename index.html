@@ -48,16 +48,16 @@
     }
 
     #question-bubble {
-      width: 35%;
+      width: 20%;
       height: auto;
       padding: 10px;
       background-color: white;
       border: 2px solid blue;
       border-radius: 15px;
-      position: relative;
-      bottom: 50px;
-      right: 50px;
-      z-index: 2;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 3;
       display: none;
       cursor: pointer;
     }
@@ -68,10 +68,11 @@
       padding: 5px 10px 5px 10px;
       background-color: lightblue;
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 50px;
+      right: 50px;
       cursor: pointer;
       box-shadow: 1px 1px black;
+      z-index: 2;
     }
 
     #question:hover {
@@ -123,7 +124,7 @@
       <p>If you have any questions, please call us at 704-267-2689. &#128512;</p>
     </div>
     <section class="row">
-      
+
       <main>
         <div id="question"></div>
         <h2 id="p4"></h2>
@@ -131,14 +132,15 @@
 
         <div class="card mb-3" style="height: auto;">
           <div class="row no-gutters">
-          
+
 
             <div class="col-md-12">
               <div class="card-body">
                 <h1 class="card-title one" style="text-align: center;">Introduction</h1>
                 <p class="card-text two">
-                <p id="intro"><img src="file mar 04, 11 57 41 pm.JPG" style="width: 350px; height: 150px; float: left; margin: 5%;"
-                    class="imgone" alt="...">Michelle Liu is a violinist who was trained by a full-time music specialty
+                <p id="intro"><img src="file mar 04, 11 57 41 pm.JPG"
+                    style="width: 350px; height: 150px; float: left; margin: 5%;" class="imgone" alt="...">Michelle Liu
+                  is a violinist who was trained by a full-time music specialty
                   talent center
                   since 7 years old and graduated from a music college. She was a professor at a college and the first
                   violinist at the Shenzhen symphony. She accumulated a vast amount of experience from teaching
@@ -176,19 +178,11 @@
                 <img src="IMG_0310.jpg" class="d-block h-25 w-100" alt="...">
               </div>
               <div class="carousel-item mh-100">
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-                
->>>>>>> e3ab32df93a8779bc23de52e27e64ca443ae896d
               </div>
               <div class="carousel-item mh-100">
 
               </div>
               <div class="carousel-item mh-100">
->>>>>>> ec1565124f270729cd589d6d4e4fb77dee97275a
                 <img src="IMG_2071.jpg" class="d-block h-25 w-100" alt="...">
               </div>
               <div class="carousel-item mh-100">
@@ -219,7 +213,7 @@
     <footer>
 
     </footer>
-  </div> -->
+  </div>
   <script>
     $(document).ready(function () {
       $(".btn").on("click", function () {
@@ -254,18 +248,14 @@
         $("#question-bubble").css("display", "block")
       })
 
-<<<<<<< HEAD
       $("#question-bubble").on("click", function () {
         $("#question-bubble").css("display", "none")
         $("#question").css("display", "block")
-=======
-      $("#question-bubble").on("click", function() {
-        $("#question-bubble").css("display", "none")
-        $("#question").css("display","block")
->>>>>>> e3ab32df93a8779bc23de52e27e64ca443ae896d
       })
 
     })
+    
+
   </script>
 </body>
 
