@@ -10,10 +10,57 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <title>Michelle's Music Studio</title>
   <style>
+    .col-1 {
+      width: 8.33%;
+    }
+
+    .col-2 {
+      width: 16.66%;
+    }
+
+    .col-3 {
+      width: 25%;
+    }
+
+    .col-4 {
+      width: 33.33%;
+    }
+
+    .col-5 {
+      width: 41.66%;
+    }
+
+    .col-6 {
+      width: 50%;
+    }
+
+    .col-7 {
+      width: 58.33%;
+    }
+
+    .col-8 {
+      width: 66.66%;
+    }
+
+    .col-9 {
+      width: 75%;
+    }
+
+    .col-10 {
+      width: 83.33%;
+    }
+
+    .col-11 {
+      width: 91.66%;
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+
     .imgone {
       min-height: 350px;
       max-width: 500px;
-      float: left;
 
     }
 
@@ -48,15 +95,15 @@
     }
 
     #question-bubble {
-      width: 35%;
+      width: 20%;
       height: auto;
       padding: 10px;
       background-color: white;
       border: 2px solid blue;
       border-radius: 15px;
-      position: relative;
-      bottom: 50px;
-      right: 50px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
       z-index: 2;
       display: none;
       cursor: pointer;
@@ -69,8 +116,8 @@
       padding: 5px 10px 5px 10px;
       background-color: lightblue;
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 50px;
+      right: 50px;
       cursor: pointer;
       box-shadow: 1px 1px black;
     }
@@ -119,102 +166,57 @@
     </nav>
 
   </header>
-  <div class="container">
-
-    <div id="question-bubble">
-      <p>If you have any questions, please call us at 704-267-2689. &#128512;</p>
-    </div>
-    <section class="row">
-
-      <main>
-        <div id="question"></div>
+  <div id="question-bubble">
+    <p>If you have any questions, please call us at 704-267-2689. &#128512;</p>
+  </div>
+  <div id="question"></div>
         <h2 id="p4"></h2>
-        <h1 id="title">Michelle Music Studio</h1>
+        <h1 id="title" class="col-12">Michelle Music Studio</h1>
+  <div class="col-12">
+    <div class="card mb-3 col-12" style="height: auto; width: 100%;">
+        <div class="no-gutters col-12">
+          <div>
+            <img src="file mar 04, 11 57 41 pm.JPG" style="width: 100%;
+            height: auto;" class="imgone" alt="...">
 
-        <div class="card mb-3" style="height: auto;">
-          <div class="row no-gutters">
-          
+          </div>
 
-            <div class="col-md-12">
-              <div class="card-body">
-                <h1 class="card-title one" style="text-align: center;">Introduction</h1>
-                <p class="card-text two">
-                <p id="intro"><img src="file mar 04, 11 57 41 pm.JPG" style="width: 350px; height: 150px; float: left; margin: 5%;"
-                    class="imgone" alt="...">Michelle Liu is a violinist who was trained by a full-time music specialty
-                  talent center
-                  since 7 years old and graduated from a music college. She was a professor at a college and the first
-                  violinist at the Shenzhen symphony. She accumulated a vast amount of experience from teaching
-                  students. Some of them award-winning and become violinists. She also majored in piano and erhu. She is
-                  very successful at the education field.</p>
-                </p>
+          <div>
+            <div class="card-body">
+              <h1 class="card-title one">Introduction</h1>
+              <p class="card-text two">
+              <p id="intro">Michelle Liu is a violinist who was trained by a full-time music specialty talent center
+                since 7 years old and graduated from a music college. She was a professor at a college and the first
+                violinist at the Shenzhen symphony. She accumulated a vast amount of experience from teaching
+                students. Some of them award-winning and become violinists. She also majored in piano and erhu. She is
+                very successful at the education field.</p>
+              </p>
 
-              </div>
             </div>
           </div>
         </div>
-
-        <h1 class="tag">Teacher Performance with Student</h1>
-
-
-        <div class="embed-responsive embed-responsive-4by3" style="z-index: 1">
-          <video width="320" height="240" controls>
-
-            <source src="final_5f2483f192086a0015cfc884_719896.mp4" type="video/mp4">
-          </video>
-
-        </div>
+      </div>
+  </div>
+  <div class="col-12">
+    <h1 class="tag">Teacher Performance with Student</h1>
 
 
-        <h1 class="tag">Michelle with Students</h1>
-        <div id="carousel-bg">
-          <div id="carouselExampleControls" class="carousel slide"
-            style="height: 100px; width: 550px; margin-left: 180px;" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item mh-150 active">
-                <img src="IMG_1169.JPG" class=" d-block h-25 w-100"
-                  style="margin-left: 30px; height: 500%; width: 300px;" alt="...">
-              </div>
-              <div class="carousel-item mh-100">
-                <img src="IMG_0310.jpg" class="d-block h-25 w-100" alt="...">
-              </div>
-              <div class="carousel-item mh-100">
+    <div class="embed-responsive embed-responsive-4by3">
+      <video width="320" height="240" controls>
 
-              </div>
-              <div class="carousel-item mh-100">
+        <source src="final_5f2483f192086a0015cfc884_719896.mp4" type="video/mp4">
+      </video>
 
-              </div>
-              <div class="carousel-item mh-100">
-                <img src="IMG_2071.jpg" class="d-block h-25 w-100" alt="...">
-              </div>
-              <div class="carousel-item mh-100">
-                <img src="IMG_8135.JPG" class="d-block h-25 w-100" alt="...">
-              </div>
-              <div class="carousel-item mh-100">
-                <img src="IMG_2335.jpg" class="d-block h-25 w-100" alt="...">
-              </div>
-              <div class="carousel-item mh-100">
-                <img src="IMG_2197.jpg" class="d-block h-25 w-100" alt="...">
-              </div>
-              <div class="carousel-item mh-100">
-                <img src="Violin6.jpg" class="d-block h-25 w-100" alt="...">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="false"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <h1 class="tag">Michelle with Students</h1>
+  </div>
+  <div class="col-12">
 
-      </main>
-    </section>
-    <footer>
+  </div>
 
-    </footer>
-  </div> -->
+     
   <script>
     $(document).ready(function () {
       $(".btn").on("click", function () {

@@ -12,15 +12,35 @@
   <title>Michelle Music Studio</title>
   <style>
     form {
-      margin-left: 475px;
+      margin: auto;
+      width: 50%;
       margin-top: 25px;
     }
 
     h1 {
-      margin-left: 400px;
+      text-align: center;
     }
-    #submitButton {
-      margin-left: 50px;
+    input:focus {
+      background-color: lightblue;
+    }
+    li a:hover {
+      background-color: green;
+    }
+    input[type="text"] {
+      min-width: 100%;
+    }
+    label[for="vehicle1"]:hover {
+      background-color: salmon;
+    }
+    label[for="vehicle2"]:hover {
+      background-color: lightgreen;
+    }
+    label[for="vehicle3"]:hover {
+      background-color: lightblue;
+    }
+    body {
+      background-image: linear-gradient(gray, white);
+      background-repeat: repeat-x;
     }
   </style>
 </head>
@@ -43,7 +63,7 @@
             <a class="nav-link" href="Contact(Violin).html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Interactive.html">Interactive</a>
+            <a class="nav-link" href="Register.html">Register</a>
           </li>
 
           <li class="nav-item">
@@ -71,7 +91,7 @@
       <input type="text" id="fname" name="fname" placeholder="someone@email.com"><br>
       <label for="lname">Telephone: </label><br>
       <input type="text" id="lname" name="lname" placeholder="000-000-0000"><br><br>
-      <caption>Please select the instrument(s):</caption><br>
+      <caption>Please select the instrument(s):</caption>
       <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
       <label for="vehicle1"> Violin</label>
       <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
